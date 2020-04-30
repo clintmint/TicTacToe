@@ -162,7 +162,7 @@ public class TicTacToe extends Application
 			
 				// check for a winner -
 				//
-				// only seven ways to win
+				// eight ways to win
 				//	
 				// does O win? - O's array elements are equal to 0
 				// vertical check
