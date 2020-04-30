@@ -35,7 +35,7 @@ public class TicTacToe extends Application
 	// 0 = O wins
 	// 1 = X wins
 	// 2 = Tie
-	// 3 = game not started or in progress
+	// -1 = game not started or in progress
 	private int gameResult = -1;
 
 	public static void main(String[] args)
