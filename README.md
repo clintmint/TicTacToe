@@ -15,14 +15,7 @@ I wrote this for a final project in Programming Fundamentals II. It's a simple T
 2. Extract
 3. Set PATH\_TO\_FX envrionment variable using full path of **javafx-sdk-14.0.1/lib**
 
-## Download TicTacToe, compile and run (Windows)
-
-1. `git clone https://github.com/clintmint/TicTacToe.git`
-2. `cd TicTacToe`
-3. `javac --module-path %PATH_TO_FX% --add-modules javafx.controls TicTacToe.java`
-4. `java --module-path %PATH_TO_FX% --add-modules javafx.controls TicTacToe`
-
-## Download TicTacToe, compile and run (Linux/macOS)
+## Download TicTacToe, compile and run (Git Bash for Windows/Linux/macOS)
 
 1. `git clone https://github.com/clintmint/TicTacToe.git`
 2. `cd TicTacToe`
