@@ -18,12 +18,14 @@ I wrote this for a final project in Programming Fundamentals II. It's a simple T
 ## Download TicTacToe, compile and run (Windows)
 
 1. `git clone https://github.com/clintmint/TicTacToe.git`
-2. `javac --module-path %PATH_TO_FX% --add-modules javafx.controls TicTacToe.java`
-3. `java --module-path %PATH_TO_FX% --add-modules javafx.controls TicTacToe`
+2. `cd TicTacToe`
+3. `javac --module-path %PATH_TO_FX% --add-modules javafx.controls TicTacToe.java`
+4. `java --module-path %PATH_TO_FX% --add-modules javafx.controls TicTacToe`
 
 ## Download TicTacToe, compile and run (Linux/macOS)
 
 1. `git clone https://github.com/clintmint/TicTacToe.git`
-2. `javac --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe.java`
-3. `java --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe`
+2. `cd TicTacToe`
+3. `javac --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe.java`
+4. `java --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe`
 
