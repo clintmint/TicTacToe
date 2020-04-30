@@ -6,14 +6,14 @@ I wrote this for a final project in Programming Fundamentals II. It's a simple T
 
 1. Download latest "Ready for use" JDK here: http://jdk.java.net/
 2. Extract
-3. Append full path to **jdk-14.0.1/bin** to your PATH environment variable. Note that this may override any Java binaries currently installed.
-4. Set JAVA\_HOME environment variable to full path to **jdk-14.0.1**
+3. Append full path of **jdk-14.0.1/bin** to your PATH environment variable. Note that this may override any Java binaries currently installed.
+4. Set JAVA\_HOME environment variable to full path of **jdk-14.0.1**
 
 ## Install Open JavaFX
 
 1. Download "Latest Release" JavaFX SDK here: https://gluonhq.com/products/javafx/
 2. Extract
-3. Set PATH\_TO\_FX envrionment variable using full path to **javafx-sdk-14.0.1/lib**
+3. Set PATH\_TO\_FX envrionment variable using full path of **javafx-sdk-14.0.1/lib**
 
 ## Download TicTacToe, compile and run (Windows)
 
