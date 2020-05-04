@@ -1,6 +1,6 @@
 # Tic Tac Toe Game
 
-I wrote this for a final project in Programming Fundamentals II. It's a simple Tic Tac Toe game that plays itself using random numbers and calculates the results. Originally written and compiled using Java 8 from Oracle. Without modification it should compile and run using the latest OpenJDK + OpenJFK packages.
+I wrote this for a final project in Programming Fundamentals II. It's a simple Tic Tac Toe game that plays itself using random numbers and calculates the results. Originally written and compiled using Java 8 from Oracle. Without modification it should compile and run using the latest OpenJDK and Open JavaFX packages.
 
 ## Install OpenJDK
 
