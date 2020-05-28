@@ -2,22 +2,42 @@
 
 I wrote this for a final project in Programming Fundamentals II. It's a simple Tic Tac Toe game that plays itself using random numbers and calculates the results. Originally written and compiled using Java 8 from Oracle. Without modification it should compile and run using the latest OpenJDK and Open JavaFX packages.
 
-## Install OpenJDK
+## Compile and Run Instructions
 
-1. Download latest "Ready for use" JDK here: http://jdk.java.net/
-2. Extract
-3. Append full path of **jdk-14.0.1/bin** to your PATH environment variable. Note that this may override any Java binaries currently installed.
-4. Set JAVA\_HOME environment variable to full path of **jdk-14.0.1**
+### Windows
 
-## Install Open JavaFX
+- Install [Git for Windows](https://gitforwindows.org/)
+- Open **Git Bash**
 
-1. Download "Latest Release" JavaFX SDK here: https://gluonhq.com/products/javafx/
-2. Extract
-3. Set PATH\_TO\_FX envrionment variable using full path of **javafx-sdk-14.0.1/lib**
+```bash
+git clone https://github.com/clintmint/TicTacToe.git
 
-## Download TicTacToe, compile and run (Git Bash for Windows/Linux/macOS)
+cd TicTacToe
 
-1. `git clone https://github.com/clintmint/TicTacToe.git && cd TicTacToe`
-2. `javac --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe.java`
-3. `java --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe`
+curl -o openjdk-14.0.1_windows-x64_bin.zip https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_windows-x64_bin.zip
+curl -o openjfx-14.0.1_windows-x64_bin-sdk.zip https://download2.gluonhq.com/openjfx/14.0.1/openjfx-14.0.1_windows-x64_bin-sdk.zip
+
+unzip *.zip
+
+export PATH=/c/Users/clint/jdk-14.0.1/bin/:$PATH
+export PATH_TO_FX=/c/Users/clint/javafx-sdk-11.0.2/lib/
+```
+
+- Verify versions
+
+```bash
+java -version
+javac -version
+```
+
+- Compile & Run
+
+```bash
+javac --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe.java
+java --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe
+```
+
+### Linux
+
+TBA
 
