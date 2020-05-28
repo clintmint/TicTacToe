@@ -19,8 +19,8 @@ curl -o openjfx-14.0.1_windows-x64_bin-sdk.zip https://download2.gluonhq.com/ope
 
 unzip *.zip
 
-export PATH=/c/Users/clint/jdk-14.0.1/bin/:$PATH
-export PATH_TO_FX=/c/Users/clint/javafx-sdk-11.0.2/lib/
+export PATH=$HOME/TicTacToe/jdk-14.0.1/bin/:$PATH
+export PATH_TO_FX=$HOME/TicTacToe/javafx-sdk-11.0.2/lib/
 ```
 
 - Verify versions
