@@ -17,10 +17,11 @@ cd TicTacToe
 curl -o openjdk-14.0.1_windows-x64_bin.zip https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_windows-x64_bin.zip
 curl -o openjfx-14.0.1_windows-x64_bin-sdk.zip https://download2.gluonhq.com/openjfx/14.0.1/openjfx-14.0.1_windows-x64_bin-sdk.zip
 
-unzip *.zip
+unzip openjdk-14.0.1_windows-x64_bin.zip
+unzip openjfx-14.0.1_windows-x64_bin-sdk.zip
 
 export PATH=$HOME/TicTacToe/jdk-14.0.1/bin/:$PATH
-export PATH_TO_FX=$HOME/TicTacToe/javafx-sdk-11.0.2/lib/
+export PATH_TO_FX=$HOME/TicTacToe/javafx-sdk-14.0.1/lib/
 ```
 
 - Verify versions
