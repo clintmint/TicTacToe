@@ -10,7 +10,7 @@ I wrote this for a final project in Programming Fundamentals II. It's a simple T
 
 2. Open **Git Bash**
 
-  <img src="gitbash.png" width="300" height="100">
+  <img src="gitbash.png" width="50%" height="50%">
   
 3. Run the following commands to setup envrionment.
 
