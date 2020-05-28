@@ -7,9 +7,13 @@ I wrote this for a final project in Programming Fundamentals II. It's a simple T
 ### Windows
 
 1. Install [Git for Windows](https://gitforwindows.org/)
+
 2. Open **Git Bash**
-  <img src="gitbash.png">
+
+  <img src="gitbash.png" width="300" height="100">
+  
 3. Run the following commands to setup envrionment.
+
 ```bash
 git clone https://github.com/clintmint/TicTacToe.git
 
@@ -24,17 +28,22 @@ unzip openjfx-14.0.1_windows-x64_bin-sdk.zip
 export PATH=$HOME/TicTacToe/jdk-14.0.1/bin/:$PATH
 export PATH_TO_FX=$HOME/TicTacToe/javafx-sdk-14.0.1/lib/
 ```
+
 4. Verify versions are 14.x
+
 ```bash
 java -version
 javac -version
 ```
+
 5. Compile & Run
+
 ```bash
 javac --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe.java
 java --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe
 ```
-<img src="tictactoe.gif">
+
+  <img src="tictactoe.gif">
 
 ### Linux
 
