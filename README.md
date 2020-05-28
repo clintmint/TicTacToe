@@ -6,9 +6,10 @@ I wrote this for a final project in Programming Fundamentals II. It's a simple T
 
 ### Windows
 
-- Install [Git for Windows](https://gitforwindows.org/)
-- Open **Git Bash**
-
+1. Install [Git for Windows](https://gitforwindows.org/)
+2. Open **Git Bash**
+  <img src="gitbash.png">
+3. Run the following commands to setup envrionment.
 ```bash
 git clone https://github.com/clintmint/TicTacToe.git
 
@@ -23,20 +24,17 @@ unzip openjfx-14.0.1_windows-x64_bin-sdk.zip
 export PATH=$HOME/TicTacToe/jdk-14.0.1/bin/:$PATH
 export PATH_TO_FX=$HOME/TicTacToe/javafx-sdk-14.0.1/lib/
 ```
-
-- Verify versions
-
+4. Verify versions are 14.x
 ```bash
 java -version
 javac -version
 ```
-
-- Compile & Run
-
+5. Compile & Run
 ```bash
 javac --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe.java
 java --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe
 ```
+<img src="tictactoe.gif">
 
 ### Linux
 
