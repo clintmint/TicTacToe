@@ -52,7 +52,7 @@ public class TicTacToe extends Application
 		{
    			for (int col = 0; col < COLS; col++)
    			{
-      			imageBoard[row][col] = new ImageView(blank);
+      				imageBoard[row][col] = new ImageView(blank);
    			}
 		}
 
@@ -108,7 +108,7 @@ public class TicTacToe extends Application
 				{
    					for (int col = 0; col < COLS; col++)
    					{
-      					imageBoard[row][col].setImage(blank);
+      						imageBoard[row][col].setImage(blank);
    					}
 				}
 			}
