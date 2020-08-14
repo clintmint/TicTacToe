@@ -15,6 +15,8 @@ I wrote this for a final project in Programming Fundamentals II. It's a simple T
 3. Run the following commands to setup envrionment.
 
 ```bash
+cd
+
 git clone https://github.com/clintmint/TicTacToe.git
 
 cd TicTacToe
