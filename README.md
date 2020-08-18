@@ -49,5 +49,41 @@ java --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe
 
 ### Linux
 
-TBA
+1. Clone 
 
+```bash
+cd
+
+git clone https://github.com/clintmint/TicTacToe.git
+
+cd TicTacToe
+```
+
+2. Download OpenJDK and OpenJFK, extract and set PATH. Total download is ~245M.
+
+```bash
+curl -o openjdk-14.0.2_linux-x64_bin.tar.gz https://download.java.net/java/GA/jdk14.0.2/205943a0976c4ed48cb16f1043c5c647/12/GPL/openjdk-14.0.2_linux-x64_bin.tar.gz
+curl -o openjfx-14.0.2.1_linux-x64_bin-sdk.zip https://download2.gluonhq.com/openjfx/14.0.2.1/openjfx-14.0.2.1_linux-x64_bin-sdk.zip
+
+tar xf openjdk-14.0.2_linux-x64_bin.tar.gz
+unzip openjfx-14.0.2.1_linux-x64_bin-sdk.zip
+
+export PATH=$HOME/TicTacToe/jdk-14.0.2/bin/:$PATH
+export PATH_TO_FX=$HOME/TicTacToe/javafx-sdk-14.0.2.1/lib/
+```
+
+3. Verify versions are 14.x
+
+```bash
+java -version
+javac -version
+```
+
+5. Compile & Run
+
+```bash
+javac --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe.java
+java --module-path $PATH_TO_FX --add-modules javafx.controls TicTacToe
+```
+
+![TicTacToe on Linux](https://i.imgur.com/HieJ30p.png)
