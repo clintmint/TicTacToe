@@ -19,23 +19,23 @@ import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 
 public class TicTacToe extends Application {
-    final int ROWS = 3;
-    final int COLS = 3;
+    final byte ROWS = 3;
+    final byte COLS = 3;
     // declare fields which can be used by event handler
     private Label resultsLabel;
     private ImageView[][] imageBoard;
     private Image blank = new Image("file:blank.png");
     private Image x = new Image("file:x.png");
     private Image o = new Image("file:o.png");
-    private int[][] gameBoard;
-    private int turn = 1;
+    private byte[][] gameBoard;
+    private byte turn = 1;
     
     // gameResult combinations
     // 0 = O wins
     // 1 = X wins
     // 2 = Tie
     // -1 = game not started or in progress
-    private int gameResult = -1;
+    private byte gameResult = -1;
 
     public static void main(String[] args) {
         launch(args);
@@ -45,8 +45,8 @@ public class TicTacToe extends Application {
     public void start(Stage primaryStage) {
         // Initialize imageBoard with blank images
         imageBoard = new ImageView[ROWS][COLS];
-        for (int row = 0; row < ROWS; row++) {
-            for (int col = 0; col < COLS; col++) {
+        for (byte row = 0; row < ROWS; row++) {
+            for (byte col = 0; col < COLS; col++) {
                     imageBoard[row][col] = new ImageView(blank);
             }
         }
@@ -96,8 +96,8 @@ public class TicTacToe extends Application {
                 gameResult = -1;
                 
                 // clear the game pieces
-                for (int row = 0; row < ROWS; row++) {
-                    for (int col = 0; col < COLS; col++) {
+                for (byte row = 0; row < ROWS; row++) {
+                    for (byte col = 0; col < COLS; col++) {
                             imageBoard[row][col].setImage(blank);
                     }
                 }
@@ -108,10 +108,10 @@ public class TicTacToe extends Application {
             // game array initialization, set every element to three which 
             // will be used to indicate blank, unused element
             
-            gameBoard = new int[ROWS][COLS];
+            gameBoard = new byte[ROWS][COLS];
         
-            for (int row = 0; row < ROWS; row++) {
-                for (int col = 0; col < COLS; col++) {
+            for (byte row = 0; row < ROWS; row++) {
+                for (byte col = 0; col < COLS; col++) {
                     gameBoard[row][col] = 3;
                 }
             }
@@ -119,23 +119,23 @@ public class TicTacToe extends Application {
             // play the game
             while (gameResult == -1) {
                 if (turn % 2 != 0) { // X goes first, on odd turns  
-                    int xMoveRow, xMoveCol;
+                    byte xMoveRow, xMoveCol;
                     // generate random position until you find a blank element
                     do {
-                        xMoveRow = rand.nextInt(3);
-                        xMoveCol = rand.nextInt(3);
+                        xMoveRow = (byte) rand.nextInt(3);
+                        xMoveCol = (byte) rand.nextInt(3);
                     } while (gameBoard[xMoveRow][xMoveCol] != 3); // only elements equal to 3(blank) can be played on
                 
                     gameBoard[xMoveRow][xMoveCol] = 1; // set element to represent X
                     imageBoard[xMoveRow][xMoveCol].setImage(x);
                 }
                 else { // O goes second, on even turns  
-                    int oMoveRow, oMoveCol;
+                    byte oMoveRow, oMoveCol;
         
                     // generate random position until you find a blank element
                     do {   
-                        oMoveRow = rand.nextInt(3);
-                        oMoveCol = rand.nextInt(3);
+                        oMoveRow = (byte) rand.nextInt(3);
+                        oMoveCol = (byte) rand.nextInt(3);
                     } while (gameBoard[oMoveRow][oMoveCol] != 3); // only elements equal to 3(blank) can be played on
                 
                     gameBoard[oMoveRow][oMoveCol] = 0; // set element to represent O
