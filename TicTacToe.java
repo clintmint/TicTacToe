@@ -95,7 +95,7 @@ public class TicTacToe extends Application {
                 turn = 1;
                 gameResult = -1;
                 
-                // clear the game peices
+                // clear the game pieces
                 for (int row = 0; row < ROWS; row++) {
                     for (int col = 0; col < COLS; col++) {
                             imageBoard[row][col].setImage(blank);
